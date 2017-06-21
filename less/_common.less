@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.total-wrapper {
+  position: relative;
+
+  .header-wrapper {
+    .logo-bar {
+      background: rgba(0,0,255,0.8);
+      height: 60px;
+      width: 100%;
+    }
+
+    .menu-bar {
+      position: fixed;
+      background: red;
+      height: 50px;
+      z-index: 50;
+      width: 50px;
+      right: 0;
+      top: 0;
+
+      &.menu-in-sight {
+        .menu-options {
+          transform: rotate(0deg);
+        }
+      }
+
+      .menu-options {
+        transform-origin: top right;
+        transform: rotate(-90deg);
+        transition: 0.5s linear transform;
+        position: absolute;
+        text-align: right;
+        padding-top: 55px;
+        list-style: none;
+        display: block;
+        right: 5px;
+        top: 5px;
+
+        .menu-element {
+          background: rgba(255,255,255,0.6);
+          display: inline-block;
+          margin-bottom: 10px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .content-wrapper {
+    .showcase {
+      background: yellow;
+      height: 600px;
+      width: 100%;
+    }
+  }
+
+  .footer-wrapper {}
+}
+@media (min-width: 768px) {
+  .header-wrapper {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    top: 0;
+
+    &.fixed {
+      .menu-bar {
+        position: fixed;
+
+        .small-logo {
+          width: 200px;
+        }
+      }
+    }
+
+    .logo-bar {
+      position: absolute;
+      height: 60px;
+      top: 0;
+    }
+
+    .menu-bar {
+      background-color: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      display: flex;
+      height: 80px;
+      width: 100%;
+      bottom: 0;
+
+      .small-logo {
+        transition: 0.5s width linear;
+        background: blue;
+        width: 0;
+      }
+
+      .menu-options {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        .menu-element {
+          border-left: 1px solid white;
+          line-height: 50px;
+          padding: 0 15px;
+          display: block;
+          height: 50px;
+
+          &:first-child {
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {}

@@ -1,0 +1,96 @@
+@import "_common";
+
+#wall-wrapper {
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+
+  .wall-item {
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    background-color: #f7f7f7;
+    min-height: 100px;
+    margin: 15px 0 0;
+    width: 100%;
+
+    .preview-image {
+      width: 100%;
+    }
+    .date {
+      padding-right: 5px;
+      padding-left: 10px;
+      font-size: 18px;
+    }
+    .hour {
+      font-size: 14px;
+    }
+    .text {
+      padding: 10px;
+    }
+  }
+}
+
+.show-popup {
+  overflow-y: hidden;
+}
+
+#popup-wrapper {
+  box-sizing: border-box;
+  background: white;
+  position: fixed;
+  padding: 15px;
+  display: none;
+  height: 100%;
+  z-index: 100;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  .show-popup & {
+    display: block;
+  }
+
+  .close {
+    position: absolute;
+    background: black;
+    display: block;
+    height: 40px;
+    opacity: 0.6;
+    width: 40px;
+    right: 0;
+    top: 0;
+  }
+
+  .popup-body {
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+
+    .image {
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .preview-image {
+      width: 100%;
+    }
+
+    .date {
+      display: inline-block;
+    }
+
+    .hour {
+      display: inline-block;
+    }
+  }
+}
