@@ -1,0 +1,48 @@
+@import "_common";
+
+#sponsors {
+  .sponsor-row {
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 30px;
+    display: flex;
+    width: 100%;
+
+    &.uno {
+      .sponsor-el {
+        width: 100%;
+      }
+    }
+
+    &.due {
+      .sponsor-el {
+        width: 49%;
+      }
+    }
+
+    &.tre {
+      .sponsor-el {
+        width: 32%;
+      }
+    }
+
+    &.quattro {
+      .sponsor-el {
+        width: 24%;
+      }
+    }
+
+    .sponsor-el {
+      box-sizing: border-box;
+      text-align: center;
+      padding: 15px;
+      height: auto;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

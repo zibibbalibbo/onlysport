@@ -1,19 +1,104 @@
+@os-bg-light-gray: #faf6f5;
+@os-bg-gray: #293133;
+@os-yellow: yellow;
+@os-blue: blue;
+@os-btn-border: rgb(41,49,51);
+@os-btn-border-a: rgba(41,49,51, 0.5);
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 * {
+  font-family: 'Roboto Condensed', sans-serif;
   padding: 0;
   margin: 0;
 }
 
+body {
+  background: @os-bg-gray;
+}
+
+#cookie-banner {
+  justify-content: space-between;
+  transition: right linear 0.4s;
+  background: @os-bg-gray;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px 15px;
+  position: fixed;
+  color: #FFFFFF;
+  display: flex;
+  right: -100%;
+  bottom: 25%;
+  width: 100%;
+
+  &.inside {
+    right: 0;
+  }
+
+  .text {}
+
+  .close {
+    box-sizing: border-box;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+}
+
+.os-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: @os-btn-border-a;
+  background-color: transparent;
+  transition: all 1.25s cubic-bezier(.19,1,.22,1);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0);
+  outline: 1px solid @os-bg-gray;
+  outline-color: @os-btn-border-a;
+  outline-offset: 0;
+  border: 1px solid #fff!important;
+
+  &:hover {
+    border: 1px solid @os-btn-border!important;
+    outline: rgba(0,0,0,0) solid 1px;
+    color: @os-btn-border;
+    outline-offset: 15px;
+  }
+}
+
 .total-wrapper {
+  background-color: @os-bg-light-gray;
   position: relative;
 
   .header-wrapper {
     .logo-bar {
-      background: rgba(0,0,255,0.8);
-      height: 60px;
+      background: @os-bg-gray;
+      position: fixed;
+      height: 50px;
+      z-index: 10;
       width: 100%;
+      top: 0;
     }
 
     .menu-bar {
+      cursor: pointer;
       position: fixed;
       background: red;
       height: 50px;
@@ -45,78 +130,176 @@
           display: inline-block;
           margin-bottom: 10px;
           padding: 10px;
+
+          a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #000;
+          }
         }
       }
     }
   }
 
   .content-wrapper {
+    box-sizing: border-box;
+    padding: 0 30px;
+
     .showcase {
+      margin: 50px -30px 0;
+      position: relative;
       background: yellow;
-      height: 600px;
+      padding: 0 30px;
+      height: 250px;
       width: 100%;
+
+      .scroll-down {
+        display: none;
+      }
     }
   }
 
   .footer-wrapper {}
 }
 @media (min-width: 768px) {
-  .header-wrapper {
-    position: absolute;
-    height: 600px;
-    width: 100%;
-    top: 0;
+  #cookie-banner {
+    max-width: 900px;
+    width: 70%;
+  }
 
-    &.fixed {
+  .total-wrapper {
+    .header-wrapper {
+      position: absolute;
+      height: 600px;
+      width: 100%;
+      top: 0;
+
+      &.fixed {
+        .logo-bar {
+          display: none;
+        }
+
+        .menu-bar {
+          background-color: rgb(41,49,51);
+          position: fixed;
+          z-index: 200;
+          right: 0;
+          top: 0;
+
+          .small-logo {
+            margin: 0 15px;
+            flex-grow: 1;
+          }
+
+          .menu-options {
+            .menu-element {
+              border-color: @os-yellow;
+
+              a {
+                color: @os-yellow;
+              }
+            }
+          }
+        }
+      }
+
+      .logo-bar {
+        position: absolute;
+        height: 60px;
+        top: 0;
+      }
+
       .menu-bar {
-        position: fixed;
+        background-color: rgba(41,49,51,0.6);
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        display: flex;
+        cursor: auto;
+        height: 80px;
+        width: 100%;
+        bottom: 0;
+        top: auto;
 
         .small-logo {
-          width: 200px;
+          transition: 0.5s width linear;
+          background: blue;
+          height: 60px;
+        }
+
+        .menu-options {
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          transform: none;
+          display: flex;
+          right: auto;
+          padding: 0;
+          top: auto;
+
+          .menu-element {
+            border-left: 1px solid #000;
+            line-height: 60px;
+            background: none;
+            padding: 0 15px;
+            display: block;
+            height: 60px;
+            margin: 0;
+
+            &:first-child {
+              border-left: none;
+            }
+          }
         }
       }
     }
 
-    .logo-bar {
-      position: absolute;
-      height: 60px;
-      top: 0;
+    .content-wrapper {
+      .showcase {
+        height: 600px;
+        margin-top: 0;
+
+        .scroll-down {}
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .total-wrapper {
+    .header-wrapper {
+      height: 100vh;
     }
 
-    .menu-bar {
-      background-color: rgba(0,0,0,0.6);
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      display: flex;
-      height: 80px;
-      width: 100%;
-      bottom: 0;
+    .content-wrapper .showcase {
+      height: 100vh;
 
-      .small-logo {
-        transition: 0.5s width linear;
-        background: blue;
-        width: 0;
-      }
+      .scroll-down {
+        background-color: @os-bg-gray;
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        z-index: 100;
+        opacity: 0.6;
+        height: 80px;
+        width: 80px;
+        bottom: 0;
+        right: 0;
 
-      .menu-options {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-
-        .menu-element {
-          border-left: 1px solid white;
-          line-height: 50px;
-          padding: 0 15px;
+        &::after {
+          background-image: url("/img/arrow-down.png");
+          animation: bounce 2s infinite;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 50%;
+          position: absolute;
           display: block;
-          height: 50px;
-
-          &:first-child {
-            border-left: none;
-          }
+          height: 100%;
+          width: 100%;
+          content: "";
+          left: 0;
+          top: 0;
         }
       }
     }
   }
 }
-@media (min-width: 1024px) {}
