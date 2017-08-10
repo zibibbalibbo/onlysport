@@ -1,11 +1,15 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/videoteca.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
 
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="css/sponsor.css">
+
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/jquery.cookie.js"></script>
 
 		<script src="js/common.js"></script>
-		<script src="js/videoteca.js"></script>
 	</head>
 	<body>
 		<div class="total-wrapper">
@@ -14,20 +18,37 @@
 				<div class="menu-bar">
 					<div class="small-logo"></div>
 					<ul class="menu-options">
-						<li class="menu-element">HOME</li>
-						<li class="menu-element">SQUADRA</li>
-						<li class="menu-element">STAFF</li>
-						<li class="menu-element">SPONSOR</li>
-						<li class="menu-element">CONTATTI</li>
-						<li class="menu-element">SOCIETA'</li>
-						<li class="menu-element">CONTATTI</li>
+						<li class="menu-element"><a href="/home.html#scrolldown">HOME</a></li>
+						<li class="menu-element"><a href="/team.html#scrolldown">SQUADRA</a></li>
+						<li class="menu-element active"><a href="/sponsor.html#scrolldown">SPONSOR</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="content-wrapper">
-				<div class="showcase"></div>
+			<div id="sponsors" class="content-wrapper">
+				<div class="showcase"><div class="scroll-down"></div></div>
+
+				<div class="sponsor-row uno">
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+				</div>
+				<div class="sponsor-row due">
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+				</div>
+				<div class="sponsor-row tre">
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+				</div>
+				<div class="sponsor-row quattro">
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+					<div class="sponsor-el"><img src="img/sponsor.jpg"></div>
+				</div>
 			</div>
 			<div class="footer-wrapper"></div>
 		</div>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	</body>
 </html>
