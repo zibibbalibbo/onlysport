@@ -2,7 +2,7 @@
   // var userId = '+GoPro';
   var userId = '+CMSExperiment';
   var collection = 'public';
-  var apikey = 'AIzaSyDLKCjkDs0bfE0Y0NBEgcvB0APQST5KH-I';
+  var apikey = 'AIzaSyBdGn4wiV_C-8aPINPvp3SSHJCmLn2YJGw';
   var itemsPerPage = 20;
 
   var SocialManager = {
@@ -105,7 +105,7 @@
             html += `<div class="image" style="background-image: url('${paths[1]}');">
             <img class="detail-image" height="${imgSizes.height}" width="${imgSizes.width}" src="${paths[0]}">
             </div>`;
-          } else if(paths.length == 1) {
+          } else if (paths.length == 1) {
             html += `<img class="detail-image" height="${imgSizes.height}" width="${imgSizes.width}" src="${paths[0]}">`;
           }
         }

@@ -41,6 +41,7 @@ body {
   padding: 10px 15px;
   position: fixed;
   color: #FFFFFF;
+  z-index: 9000;
   display: flex;
   right: -100%;
   bottom: 25%;
@@ -95,6 +96,16 @@ body {
       z-index: 10;
       width: 100%;
       top: 0;
+
+      .logo {
+        position: absolute;
+        margin-left: -50px;
+        margin-top: -20px;
+        display: block;
+        width: 80px;
+        left: 50%;
+        top: 50%;
+      }
     }
 
     .menu-bar {
@@ -187,6 +198,10 @@ body {
           top: 0;
 
           .small-logo {
+            background-image: url('/img/loghi/logo_only.png');
+            background-position: center left;
+            background-repeat: no-repeat;
+            background-size: 80px auto;
             margin: 0 15px;
             flex-grow: 1;
           }
@@ -223,7 +238,6 @@ body {
 
         .small-logo {
           transition: 0.5s width linear;
-          background: blue;
           height: 60px;
         }
 
