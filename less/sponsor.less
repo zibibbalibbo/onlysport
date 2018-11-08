@@ -1,47 +1,59 @@
+@import "_variables";
 @import "_common";
 
 #sponsors {
   .sponsor-row {
     justify-content: space-between;
+    flex-direction: column;
     box-sizing: border-box;
+    padding: 20px 30px 0;
     align-items: center;
-    padding: 0 30px;
     display: flex;
     width: 100%;
-
-    &.uno {
-      .sponsor-el {
-        width: 100%;
-      }
-    }
-
-    &.due {
-      .sponsor-el {
-        width: 49%;
-      }
-    }
-
-    &.tre {
-      .sponsor-el {
-        width: 32%;
-      }
-    }
-
-    &.quattro {
-      .sponsor-el {
-        width: 24%;
-      }
-    }
 
     .sponsor-el {
       box-sizing: border-box;
       text-align: center;
+      display: block;
       padding: 15px;
       height: auto;
+      width: 100%;
 
       img {
         max-height: 100%;
         max-width: 100%;
+      }
+    }
+  }
+}
+
+@media @desktop-media-query {
+  #sponsors {
+    .sponsor-row {
+      flex-direction: row;
+
+      &.uno {
+        .sponsor-el {
+          width: 100%;
+        }
+      }
+
+      &.due {
+        .sponsor-el {
+          width: 49%;
+        }
+      }
+
+      &.tre {
+        .sponsor-el {
+          width: 32%;
+        }
+      }
+
+      &.quattro {
+        .sponsor-el {
+          width: 24%;
+        }
       }
     }
   }

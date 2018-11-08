@@ -2,4 +2,35 @@ google+
   email: onlysportfc@gmail.com
   pwd: OSfctest
   userId:
-  apikey:
+  apikey: AIzaSyBdGn4wiV_C-8aPINPvp3SSHJCmLn2YJGw
+
+
+[{
+  giornata: 1,
+  [
+  {squadra1: ciccio,
+  squadra2:pippo,
+  risultato: 1-1
+  },
+  {squadra1: ciccio,
+  squadra2:pippo,
+  risultato: 1-1
+  },
+  {squadra1: ciccio,
+  squadra2:pippo,
+  risultato: 1-1
+  },
+  {squadra1: ciccio,
+  squadra2:pippo,
+  risultato: 1-1
+  },
+  {squadra1: ciccio,
+  squadra2:pippo,
+  risultato: 1-1
+  },
+  {squadra1: ciccio,
+  squadra2:pippo,
+  risultato: 1-1
+  }
+  ]
+},]
