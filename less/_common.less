@@ -111,9 +111,12 @@ body {
     }
 
     .menu-bar {
+      background-image: url("../img/icons/menu.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px auto;
       cursor: pointer;
       position: fixed;
-      background: red;
       height: 50px;
       z-index: 50;
       width: 50px;
@@ -197,6 +200,7 @@ body {
     .showcase {
       background-image: url('/img/squadra.jpg');
       background-repeat: no-repeat;
+      background-position: center;
       margin: 50px -30px 80px;
       background-size: cover;
       position: relative;
@@ -233,6 +237,7 @@ body {
         }
 
         .menu-bar {
+          background-image: none;
           background-color: rgb(41, 49, 51);
           position: fixed;
           z-index: 200;
@@ -271,6 +276,7 @@ body {
         top: auto;
       }
       .menu-bar {
+        background-image: none;
         background-color: rgba(41, 49, 51, 0.95);
         justify-content: center;
         align-items: center;
@@ -332,11 +338,11 @@ body {
 @media (min-width: 1024px) {
   .total-wrapper {
     .header-wrapper {
-      height: 100vh;
+      height: 70vh;
     }
 
     .content-wrapper .showcase {
-      height: 100vh;
+      height: 70vh;
 
       .scroll-down {
         background-color: @os-bg-gray;

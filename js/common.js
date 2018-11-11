@@ -92,12 +92,6 @@ var ScrollManager = {
             });
         }
 
-        if (document.location.hash == '#scrolldown') {
-            setTimeout(() => {
-                this.scroll();
-            }, 500);
-        }
-
         $('.menu-element.active').click(() => {
             this.scroll();
         });

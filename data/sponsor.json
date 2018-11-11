@@ -1,74 +1,80 @@
 {
   "row1": [
     {
-      "name": "le tradizioni di nick",
-      "image": "tradizioni_nick.jpg",
-      "url": "http://www.google.it"
+      "name": "Le Tradizioni di Nick",
+      "image": "Nick.jpg",
+      "url": "http://www.letradizionidinick.it/"
+    },
+    {
+      "name": "Donato Domenico",
+      "image": "Donato.jpg"
     }
   ],
   "row2": [
     {
-      "name": "incatasciato impianti",
-      "image": "incatasciato_impianti.jpg",
-      "url": "http://www.google.it"
+      "name": "Speedy Gomme",
+      "image": "Speedy.jpg",
+      "url": "https://www.speedygomme.com/"
     },
     {
-      "name": "pollini",
-      "image": "pollini_autoservizi.jpg",
-      "url": "http://www.google.it"
+      "name": "Nuova OLP",
+      "image": "NuovaOLP.jpg",
+      "url": "http://www.nuovaolp.com/"
     }
   ],
   "row3": [
     {
-      "name": "nuova olp",
-      "image": "nuova_olp.jpg",
-      "url": "http://www.google.it"
+      "name": "AB System",
+      "image": "ABsystem.jpg",
+      "url": "https://www.paginebianche.it/solarolo/a-b-system.685614"
     },
     {
-      "name": "biesse",
-      "image": "biesse.jpg",
-      "url": "http://www.google.it"
-    },
-    {
-      "name": "alliance",
-      "image": "alliance.jpg",
-      "url": "http://www.google.it"
+      "name": "Campana Sicurezza",
+      "image": "CSS.jpg",
+      "url": "http://www.campanasicurezza.com/"
     }
   ],
   "row4": [
     {
-      "name": "incatasciato impianti",
-      "image": "incatasciato_impianti.jpg",
-      "url": "http://www.google.it"
+      "name": "Assicoop - UnipolSai",
+      "image": "Assicoop.jpg",
+      "url": "https://www.assicoop.it/"
     },
     {
-      "name": "pollini",
-      "image": "pollini_autoservizi.jpg",
-      "url": "http://www.google.it"
+      "name": "Alliance",
+      "image": "Alliance.jpg",
+      "url": "http://www.alliancera.it/"
     }
   ],
   "row5": [
     {
-      "name": "incatasciato impianti",
-      "image": "incatasciato_impianti.jpg",
-      "url": "http://www.google.it"
+      "name": "Smile Cafè",
+      "image": "Smile.jpg",
+      "url": "https://www.facebook.com/Smile-caf%C3%A8-115520528507359/"
     },
     {
-      "name": "pollini",
-      "image": "pollini_autoservizi.jpg",
-      "url": "http://www.google.it"
+      "name": "Biesse Sistemi",
+      "image": "Biesse.jpg",
+      "url": "http://www.biessesistemi.it/"
     }
   ],
   "row6": [
     {
-      "name": "incatasciato impianti",
-      "image": "incatasciato_impianti.jpg",
-      "url": "http://www.google.it"
+      "name": "Incatasciato Impianti",
+      "image": "Incatasciato.jpg",
+      "url": ""
     },
     {
-      "name": "pollini",
-      "image": "pollini_autoservizi.jpg",
-      "url": "http://www.google.it"
+      "name": "Pollini",
+      "image": "Pollini.jpg",
+      "url": "https://www.polliniautoservizi.com/"
+    }
+  ],
+  "row7": [
+    {
+      "name": "Gairsa",
+      "image": "Garisa.jpg",
+      "url": "https://gairsa.it/"
     }
   ]
 }
